@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Start styling the attribution */
+.attribution { 
+    position: fixed;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem; 
+    line-height: 1.6; 
+    text-align: center; 
+    color:hsl(220, 15%, 55%);
+    width: 100%;
+}
+.attribution a { 
+    color: var(--Soft-blue);
+}
+.attribution a:hover{
+    color: var(--Cyan);
+    transition: color .3s;
+}
+
+/* Screen reader class to hide the content visually */
+.sr-only {
+    position: absolute !important;
+    margin: -1px !important;
+    -webkit-clip-path: inset(50%) !important;
+            clip-path: inset(50%) !important;
+    border: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}
+
+html{
+    font-size: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem 2.2rem;
+}
+
+/*Start Styling main*/
+
+/*Upper part*/
+main{
+    padding: 7.5rem 0 0;
+} 
+
+main .logo{
+    padding-bottom: 4rem;
+}
+
+main h2{
+    color: hsl(210, 10%, 33%);
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+main .first{
+    font-size: 1.9rem;
+}
+
+main p{
+    color:hsla(220, 15%, 55%, 70%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 3.5rem;
+}
+
+main .head{
+    color:hsla(220, 15%, 55%, 60%);
+}
+
+main .download{
+    margin-bottom: 10rem;
+}
+
+main .download > .OS{
+    padding: 1rem 4.8rem 0.7rem;      
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 20px -5px hsla(171, 66%, 44%, 50%);
+}
+
+main .download > a{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2rem; 
+    color: hsla(0, 100%, 100%, 90%);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+main .download > .mac{
+    padding: 1rem 4.65rem 0.7rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 10px 20px -5px hsla(233, 100%, 69%, 50%);
+}
+
+/*Presentation part*/
+main h3{
+    color: hsl(210, 10%, 33%);
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+main h4{
+    color: hsl(210, 10%, 33%);
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+main .grid_check > img{
+    width: 80vw;
+    max-width: 30rem;
+    padding-bottom: 3rem;
+}
+
+main .grid_check{
+    margin-bottom: 8rem;
+}
+
+main .devices{
+    width: 80vw;
+    max-width: 30rem;
+    margin-bottom: 6rem;
+}
+
+main .overview{
+    margin-top: 2rem;
+}
+
+main .overview > div > img{
+    padding-bottom: 2.5rem;
+}
+
+main .contributor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 8rem;
+}
+
+main .contributor > img{
+    padding: 2.25rem 0;
+} 
+
+main .contributor .google{
+    width: 8rem;
+}
+
+main .contributor .ibm{
+    width: 6.5rem;
+}
+
+main .contributor .micro{
+    width: 8rem;
+}
+
+main .contributor .hpe{
+    width: 6.5rem;
+}
+
+main .contributor .vg{
+    width: 6rem;
+}
+
+/*Styling Footer*/
+footer{
+    width: 100vw;
+    background-color: hsla(201, 11%, 66%, 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8rem 0;
+}
+
+footer .flogo{
+    width: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+footer .link{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div > a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;    
+    color: hsla(210, 10%, 33%, 80%);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+footer .social{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+
+footer .social a{
+    padding: 0 1.3rem;
+}
+
+@media screen and (min-width: 769px){
+    body{
+        padding: 0 4rem;
+    }
+    main p{
+        padding: 0 7rem 3.5rem;
+    }
+    
+    main .download > .OS{
+        padding: 1rem 2rem 0.7rem;
+        margin-right: 1rem;      
+    }
+    
+    main .download > .mac{
+        padding: 1rem 1.83rem 0.7rem;
+    }
+    
+    /*Presentation part*/
+    
+    main h4{
+        padding-bottom: 0.5rem;
+    }
+    
+    main .grid_check{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        align-items: center;
+        column-gap: 4rem;
+        row-gap: 2rem;
+        margin-left: -7rem;
+        text-align: left;
+    }
+
+    main .grid_check > img{
+        max-width: 30rem;
+        padding-bottom: 0;
+        float: left;
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    main .grid_check .n1{
+        align-self: flex-end;
+    }
+
+    main .grid_check .n3{
+        align-self: flex-start;
+    }
+
+    main .grid_check > div > p{
+        padding: 0 2rem 0 0;
+    }
+
+    main .overview{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 2rem;
+    }
+
+    main .overview > div > p{
+        padding: 0;
+    }
+    
+    main .overview > div > img{
+        padding-bottom: 2rem;
+    }
+
+    main .overview .m1 > img{
+        padding-bottom: 1.5rem;
+    }
+    
+    main .contributor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        padding: 8rem 0 8rem;
+    }
+    
+    /*Styling Footer*/
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 2rem 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer .flogo{
+        width: 3.5rem;
+        padding-bottom: 0rem;
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    
+    footer .links{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: left;
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
+    
+    footer .social{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0rem;
+        grid-row: 1/3;
+        grid-column: 3/4;
+        justify-self: flex-end;
+    }
+
+    footer .social > a > img{
+        width: 1.5rem;
+    }
+    
+    footer .social a{
+        padding: 0 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body{
+        background-image: url("images/bg-header-desktop.png");
+        padding: 0 10rem;
+    }
+    
+    main{
+        padding: 8rem 0;
+    }
+
+    main .logo{
+        padding-bottom: 3rem;
+    }
+
+    main .first{
+        font-size: 2.8rem;
+    }
+
+    main p{
+        font-size: 1.125rem;
+        padding: 0 13rem 3rem;
+        line-height: 2rem;
+    }
+
+    main .head{
+        font-size: 1.25rem;
+    }
+
+    main .download{
+        margin-bottom: 9rem;
+    }
+
+    main .download > .OS{
+        padding: 1.2rem 2.5rem 0.8rem;   
+    }
+    
+    main .download > .mac{
+        padding: 1.2rem 2.33rem 0.8rem;
+    }
+
+    main h3{
+        font-size: 2.2rem;
+    }
+
+    main .grid_check{
+        grid-template-rows: 1fr 0.8fr 1fr;
+        column-gap: 7rem;
+        row-gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 8.5rem;
+        margin-left: -12rem;
+    }
+
+    main .grid_check > img{
+        max-width: 47rem;
+    }
+
+    main .grid_check > div > p{
+        padding: 0 6rem 0 0;
+        font-size: 1rem;
+    }
+
+    main .devices{
+        max-width: 51rem;
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    main .overview{
+        margin-top: 2.5rem;
+        column-gap: 2rem;
+    }
+
+    main .overview > div > h4{
+        padding-bottom: 1rem;
+    }
+
+    main .overview > div > p{
+        font-size: 1rem;
+    }
+
+    main .overview > div > img{
+        padding-bottom: 2.5rem;
+    }
+
+    main .overview .m1 > img{
+        padding-bottom: 2rem;
+    }
+
+    main .contributor .google{
+        width: 10rem;
+    }
+    
+    main .contributor .ibm{
+        width: 8.5rem;
+    }
+    
+    main .contributor .micro{
+        width: 10rem;
+    }
+    
+    main .contributor .hpe{
+        width: 8.5rem;
+    }
+    
+    main .contributor .vg{
+        width: 8rem;
+    }
+
+    main h2{
+        font-size: 2.15rem;
+    }
+
+    main .last{
+        font-size: 1.125rem;
+    }
+
+    main .dlast{
+        margin-bottom: 0;
+    }
+
+    main .dlast .OS{
+        padding: 1.1rem 2.5rem 0.9rem;   
+    }
+
+    main .dlast .mac{
+        padding: 1.1rem 2.33rem 0.9rem;
+    }
+
+    main .download .OS:hover{
+        transition: 0.2s linear;
+        transform: scale(1.01);
+        opacity: 0.8;
+    }
+
+    main .download .mac:hover{
+        transition: 0.2s linear;
+        transform: scale(1.01);
+        opacity: 0.8;
+    }
+
+    /*Styling Footer*/
+    footer{
+        padding: 2rem 10rem;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3rem;
+    }
+
+    footer > div > a{
+        padding: 0.7rem 0;    
+    }
+
+    footer .links a:hover{
+        transition: 0.2s linear;
+        color:hsl(171, 66%, 44%);
+    }
+
+    footer .social > a > img:hover{
+        transform: scale(0.95);
+        filter: saturate(800%) hue-rotate(320deg) brightness(150%);
+    }
+
+
+}
